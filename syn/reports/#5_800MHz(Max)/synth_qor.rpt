@@ -1,0 +1,68 @@
+ 
+****************************************
+Report : qor
+Design : pit_top
+Version: G-2012.06-SP2
+Date   : Tue Oct  2 04:52:42 2018
+****************************************
+
+
+  Timing Path Group 'wb_clk_i'
+  -----------------------------------
+  Levels of Logic:               3.00
+  Critical Path Length:          0.56
+  Critical Path Slack:           0.01
+  Critical Path Clk Period:      1.25
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:                333
+  Buf/Inv Cell Count:              59
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:       271
+  Sequential Cell Count:           62
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:      310.156002
+  Noncombinational Area:   327.446010
+  Buf/Inv Area:             35.378000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:               637.602012
+  Design Area:             637.602012
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:           414
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: 192.168.211.130
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    0.07
+  Logic Optimization:                  0.45
+  Mapping Optimization:                1.94
+  -----------------------------------------
+  Overall Compile Time:                3.59
+  Overall Compile Wall Clock Time:     3.55
+
+1

@@ -1,0 +1,662 @@
+
+                      Design Compiler Graphical
+                            DC Ultra (TM)
+                             DFTMAX (TM)
+                         Power Compiler (TM)
+                           DesignWare (R)
+                           DC Expert (TM)
+                         Design Vision (TM)
+                          HDL Compiler (TM)
+                         VHDL Compiler (TM)
+                            DFT Compiler
+                        Library Compiler (TM)
+                         Design Compiler(R)
+
+            Version H-2013.03 for RHEL32 -- Feb 25, 2013
+               Copyright (c) 1988-2012 Synopsys, Inc.
+
+This software and the associated documentation are confidential and 
+proprietary to Synopsys, Inc. Your use or disclosure of this software 
+is subject to the terms and conditions of a written license agreement 
+between you, or your company, and Synopsys, Inc.
+
+Information: Invoking dc_shell using the 32-bit executable is not
+             recommended. It will be obsolete in a future release.
+             Please invoke dc_shell using the -64bit option.
+
+Initializing...
+set_app_var search_path "/home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys/                          /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys 			 /home/mohamed/Desktop/mips "
+/home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys/                          /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys     /home/mohamed/Desktop/mips 
+set_app_var link_library "* fsc0h_d_generic_core_ss1p08v125c.db foc0h_a33_t33_generic_io_ss1p08v125c.db"
+* fsc0h_d_generic_core_ss1p08v125c.db foc0h_a33_t33_generic_io_ss1p08v125c.db
+set_app_var target_library "fsc0h_d_generic_core_ss1p08v125c.db foc0h_a33_t33_generic_io_ss1p08v125c.db"
+fsc0h_d_generic_core_ss1p08v125c.db foc0h_a33_t33_generic_io_ss1p08v125c.db
+sh rm -rf work
+sh mkdir -p work
+define_design_lib work -path ./work
+1
+analyze -library work -format verilog ../rtl/mips.v
+Running PRESTO HDLC
+Compiling source file ../rtl/mips.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys//mips_16.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/mips_16.v
+Searching for /home/mohamed/Desktop/mips/mips_16.v
+Searching for ../rtl/mips_16.v
+Opening include file ../rtl/mips_16.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys//data_memory.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/data_memory.v
+Searching for /home/mohamed/Desktop/mips/data_memory.v
+Searching for ../rtl/data_memory.v
+Opening include file ../rtl/data_memory.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys//ALUControl.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/ALUControl.v
+Searching for /home/mohamed/Desktop/mips/ALUControl.v
+Searching for ../rtl/ALUControl.v
+Opening include file ../rtl/ALUControl.v
+Warning:  ../rtl/data_memory.v:24: The statements in initial blocks are ignored. (VER-281)
+Searching for /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys//control.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/control.v
+Searching for /home/mohamed/Desktop/mips/control.v
+Searching for ../rtl/control.v
+Opening include file ../rtl/control.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys//JR_Control.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/JR_Control.v
+Searching for /home/mohamed/Desktop/mips/JR_Control.v
+Searching for ../rtl/JR_Control.v
+Opening include file ../rtl/JR_Control.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys//register_file.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/register_file.v
+Searching for /home/mohamed/Desktop/mips/register_file.v
+Searching for ../rtl/register_file.v
+Opening include file ../rtl/register_file.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys//instr_mem.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/instr_mem.v
+Searching for /home/mohamed/Desktop/mips/instr_mem.v
+Searching for ../rtl/instr_mem.v
+Opening include file ../rtl/instr_mem.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys//alu.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/alu.v
+Searching for /home/mohamed/Desktop/mips/alu.v
+Searching for ../rtl/alu.v
+Opening include file ../rtl/alu.v
+Warning:  ../rtl/instr_mem.v:37: The statements in initial blocks are ignored. (VER-281)
+Searching for /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys//IO_pads.v
+Searching for /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/IO_pads.v
+Searching for /home/mohamed/Desktop/mips/IO_pads.v
+Searching for ../rtl/IO_pads.v
+Opening include file ../rtl/IO_pads.v
+Information:  ../rtl/IO_pads.v:13: List () of one, empty, port is ignored. (VER-988)
+Warning:  ../rtl/mips.v:9: Redeclaration of port 'pc_out'. (VER-331)
+Warning:  ../rtl/mips.v:9: Redeclaration of port 'alu_result'. (VER-331)
+Warning:  ../rtl/mips.v:10: Redeclaration of port 'clk'. (VER-331)
+Warning:  ../rtl/mips.v:10: Redeclaration of port 'reset'. (VER-331)
+Warning:  ../rtl/mips.v:10: Redeclaration of port 'vdd'. (VER-331)
+Warning:  ../rtl/mips.v:10: Redeclaration of port 'vddio'. (VER-331)
+Warning:  ../rtl/mips.v:10: Redeclaration of port 'vss'. (VER-331)
+Warning:  ../rtl/mips.v:10: Redeclaration of port 'gnd'. (VER-331)
+Presto compilation completed successfully.
+Loading db file '/home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/fsc0h_d_generic_core_ss1p08v125c.db'
+Loading db file '/home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys/foc0h_a33_t33_generic_io_ss1p08v125c.db'
+1
+elaborate mips -lib work
+Loading db file '/usr/synopsys/H-2013.03/libraries/syn/gtech.db'
+Loading db file '/usr/synopsys/H-2013.03/libraries/syn/standard.sldb'
+  Loading link library 'fsc0h_d_generic_core_ss1p08v125c'
+  Loading link library 'foc0h_a33_t33_generic_io_ss1p08v125c'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully.
+Elaborated 1 design.
+Current design is now 'mips'.
+Information: Building the design 'mips_16'. (HDL-193)
+
+Inferred memory devices in process
+	in routine mips_16 line 39 in file
+		'../rtl/mips_16.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   pc_current_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Presto compilation completed successfully.
+Information: Building the design 'VCCKHA'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'GNDKHA'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'VCC3IHA'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'GND3IHA'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'CORNERHA'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'instr_mem'. (HDL-193)
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|   instr_mem/37   |   16   |    1    |      4       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'control'. (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../rtl/control.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            25            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'register_file'. (HDL-193)
+
+Inferred memory devices in process
+	in routine register_file line 19 in file
+		'../rtl/register_file.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|    reg_array_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    reg_array_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    reg_array_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    reg_array_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    reg_array_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    reg_array_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    reg_array_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+|    reg_array_reg    | Flip-flop |  16   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+| register_file/36 |   8    |   16    |      3       | N  |
+| register_file/37 |   8    |   16    |      3       | N  |
+===========================================================
+Presto compilation completed successfully.
+Information: Building the design 'JR_Control'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'ALUControl'. (HDL-193)
+Presto compilation completed successfully.
+Information: Building the design 'alu'. (HDL-193)
+
+Statistics for case statements in always block at line 10 in file
+	'../rtl/alu.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            12            |    auto/auto     |
+===============================================
+Presto compilation completed successfully.
+Information: Building the design 'data_memory'. (HDL-193)
+
+Inferred memory devices in process
+	in routine data_memory line 24 in file
+		'../rtl/data_memory.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+|       ram_reg       | Flip-flop |  16   |  Y  | N  | N  | N  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+===========================================================
+| block name/line  | Inputs | Outputs | # sel inputs | MB |
+===========================================================
+|  data_memory/28  |  256   |   16    |      8       | N  |
+===========================================================
+Presto compilation completed successfully.
+1
+current_design 
+Current design is 'mips'.
+{mips}
+check_design
+ 
+****************************************
+check_design summary:
+Version:     H-2013.03
+Date:        Wed Feb 14 04:34:43 2018
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     10
+    Unconnected ports (LINT-28)                                    10
+
+Cells                                                              14
+    Cells do not drive (LINT-1)                                    10
+    Cells do not have output pins (LINT-10)                         4
+
+Designs                                                             5
+    Black box (LINT-55)                                             5
+--------------------------------------------------------------------------------
+
+Warning: In design 'mips', cell 'corner_1' does not drive any nets. (LINT-1)
+Warning: In design 'mips', cell 'corner_2' does not drive any nets. (LINT-1)
+Warning: In design 'mips', cell 'corner_3' does not drive any nets. (LINT-1)
+Warning: In design 'mips', cell 'corner_4' does not drive any nets. (LINT-1)
+Warning: In design 'mips_16', cell 'B_17' does not drive any nets. (LINT-1)
+Warning: In design 'mips_16', cell 'B_18' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_6' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_7' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_8' does not drive any nets. (LINT-1)
+Warning: In design 'alu', cell 'B_9' does not drive any nets. (LINT-1)
+Warning: In design 'mips', cell 'corner_1' has no output pins. (LINT-10)
+Warning: In design 'mips', cell 'corner_2' has no output pins. (LINT-10)
+Warning: In design 'mips', cell 'corner_3' has no output pins. (LINT-10)
+Warning: In design 'mips', cell 'corner_4' has no output pins. (LINT-10)
+Warning: In design 'instr_mem', port 'pc[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'instr_mem', port 'pc[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_memory', port 'mem_access_addr[15]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_memory', port 'mem_access_addr[14]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_memory', port 'mem_access_addr[13]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_memory', port 'mem_access_addr[12]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_memory', port 'mem_access_addr[11]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_memory', port 'mem_access_addr[10]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_memory', port 'mem_access_addr[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'data_memory', port 'mem_access_addr[0]' is not connected to any nets. (LINT-28)
+Information: Design 'CORNERHA' does not contain any cells or nets. (LINT-55)
+Information: Design 'GND3IHA' does not contain any cells or nets. (LINT-55)
+Information: Design 'VCC3IHA' does not contain any cells or nets. (LINT-55)
+Information: Design 'GNDKHA' does not contain any cells or nets. (LINT-55)
+Information: Design 'VCCKHA' does not contain any cells or nets. (LINT-55)
+1
+source ./con/cpu_con.tcl
+1
+link
+
+  Linking design 'mips'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  * (14 designs)              /home/mohamed/Desktop/mips/syn/mips.db, etc
+  fsc0h_d_generic_core_ss1p08v125c (library)
+                              /home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/fsc0h_d_generic_core_ss1p08v125c.db
+  foc0h_a33_t33_generic_io_ss1p08v125c (library)
+                              /home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys/foc0h_a33_t33_generic_io_ss1p08v125c.db
+
+1
+set_dont_touch [get_cells pwr*]
+1
+set_dont_touch [get_cells gnd*]
+1
+set_dont_touch [get_cells corner*]
+1
+compile -map_effort medium
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | H-2013.03-DWBB_201303.0 |     *     |
+| Licensed DW Building Blocks        |                         |           |
+============================================================================
+
+
+Information: There are 24 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'data_memory'
+  Processing 'alu'
+  Processing 'ALUControl'
+  Processing 'JR_Control'
+  Processing 'register_file'
+  Processing 'control'
+  Processing 'instr_mem'
+  Processing 'mips_16'
+  Processing 'mips'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'mips_16_DW01_add_0'
+  Processing 'mips_16_DW01_sub_0'
+  Processing 'mips_16_DW01_add_1'
+  Processing 'alu_DW01_cmp2_0'
+  Processing 'alu_DW01_sub_0'
+  Processing 'alu_DW01_add_0'
+
+  Beginning Mapping Optimizations  (Medium effort)
+  -------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:01:46  536238.7      0.00       0.0       0.0                          
+    0:01:47  536238.7      0.00       0.0       0.0                          
+    0:01:47  536238.7      0.00       0.0       0.0                          
+    0:01:47  536238.7      0.00       0.0       0.0                          
+    0:01:47  536238.7      0.00       0.0       0.0                          
+    0:02:08  458730.9      0.00       0.0       0.0                          
+    0:02:09  458729.6      0.00       0.0       0.0                          
+    0:02:11  458729.6      0.00       0.0       0.0                          
+    0:02:11  458729.6      0.00       0.0       0.0                          
+    0:02:12  458729.6      0.00       0.0       0.0                          
+    0:02:12  458729.6      0.00       0.0       0.0                          
+    0:02:12  458729.6      0.00       0.0       0.0                          
+    0:02:12  458729.6      0.00       0.0       0.0                          
+    0:02:12  458729.6      0.00       0.0       0.0                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:13  458729.6      0.00       0.0       0.0                          
+    0:02:13  458729.6      0.00       0.0       0.0                          
+    0:02:14  458724.5      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:02:14  458724.5      0.00       0.0       0.0                          
+    0:02:14  458724.5      0.00       0.0       0.0                          
+    0:02:30  458605.4      0.00       0.0       0.0                          
+    0:02:37  458593.9      0.00       0.0       0.0                          
+    0:02:37  458593.9      0.00       0.0       0.0                          
+    0:02:37  458593.9      0.00       0.0       0.0                          
+    0:02:37  458593.9      0.00       0.0       0.0                          
+    0:02:38  458593.9      0.00       0.0       0.0                          
+    0:02:38  458593.9      0.00       0.0       0.0                          
+    0:02:38  458593.9      0.00       0.0       0.0                          
+    0:02:39  458593.9      0.00       0.0       0.0                          
+    0:02:39  458593.9      0.00       0.0       0.0                          
+    0:02:39  458593.9      0.00       0.0       0.0                          
+    0:02:39  458582.4      0.00       0.0       0.0                          
+Loading db file '/home/standard_cell_libraries/UMC130/HS_process/fsc0h_d/2009Q1v3.0/GENERIC_CORE/FrontEnd/synopsys/fsc0h_d_generic_core_ss1p08v125c.db'
+Loading db file '/home/standard_cell_libraries/UMC130/HS_process/foc0h_a33/2009Q1v3.0/T33_GENERIC_IO/FrontEnd/synopsys/foc0h_a33_t33_generic_io_ss1p08v125c.db'
+
+  Optimization Complete
+  ---------------------
+Warning: Design 'mips' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+     Net 'mips_core/datamem/clk': 4240 load(s), 1 driver(s)
+1
+report_area > ./report/synth_area.rpt
+report_cell > ./report/synth_cells.rpt
+report_qor  > ./report/synth_qor.rpt
+report_resources > ./report/synth_resources.rpt
+report_timing -max_paths 10 > ./report/synth_timing.rpt 
+write_sdc  output/mips.sdc 
+1
+write -f ddc -hierarchy -output output/mips.ddc   
+Writing ddc file 'output/mips.ddc'.
+1
+change_names -rule verilog 
+1
+write -hierarchy -format verilog -output output/mips.v 
+Writing verilog file '/home/mohamed/Desktop/mips/syn/output/mips.v'.
+Warning: Verilog 'assign' or 'tran' statements are written out. (VO-4)
+1
+exit
+
+Memory usage for main task 239 Mbytes.
+Memory usage for this session 239 Mbytes.
+CPU usage for this session 173 seconds ( 0.05 hours ).
+
+Thank you...

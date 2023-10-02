@@ -1,0 +1,345 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 10
+Design : pit_top
+Version: G-2012.06-SP2
+Date   : Sun Sep 30 06:22:47 2018
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: regs/pit_flg_clr_reg
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: regs/pit_flg_clr_reg
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/pit_flg_clr_reg/CK (DFFR_X1)        0.00       0.00 r
+  regs/pit_flg_clr_reg/QN (DFFR_X1)        0.06       0.06 r
+  U115/ZN (OAI33_X1)                       0.02       0.09 f
+  regs/pit_flg_clr_reg/D (DFFR_X1)         0.01       0.10 f
+  data arrival time                                   0.10
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/pit_flg_clr_reg/CK (DFFR_X1)        0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.09
+
+
+  Startpoint: regs/pit_ien_reg
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: regs/pit_irq_o_reg
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/pit_ien_reg/CK (DFFR_X1)            0.00       0.00 r
+  regs/pit_ien_reg/QN (DFFR_X1)            0.07       0.07 r
+  U68/ZN (NOR3_X1)                         0.03       0.09 f
+  regs/pit_irq_o_reg/D (DFFR_X1)           0.01       0.10 f
+  data arrival time                                   0.10
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/pit_irq_o_reg/CK (DFFR_X1)          0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.10
+
+
+  Startpoint: regs/cnt_sync_o_reg
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: regs/cnt_sync_o_reg
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/cnt_sync_o_reg/CK (DFFR_X1)         0.00       0.00 r
+  regs/cnt_sync_o_reg/QN (DFFR_X1)         0.07       0.07 r
+  U112/ZN (OAI22_X1)                       0.03       0.09 f
+  regs/cnt_sync_o_reg/D (DFFR_X1)          0.01       0.10 f
+  data arrival time                                   0.10
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/cnt_sync_o_reg/CK (DFFR_X1)         0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.10
+  -----------------------------------------------------------
+  slack (MET)                                         0.10
+
+
+  Startpoint: regs/pit_ien_reg
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: regs/pit_ien_reg
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/pit_ien_reg/CK (DFFR_X1)            0.00       0.00 r
+  regs/pit_ien_reg/QN (DFFR_X1)            0.07       0.07 r
+  U113/ZN (OAI22_X1)                       0.03       0.10 f
+  regs/pit_ien_reg/D (DFFR_X1)             0.01       0.11 f
+  data arrival time                                   0.11
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/pit_ien_reg/CK (DFFR_X1)            0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.10
+
+
+  Startpoint: regs/pit_slave_reg
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: regs/pit_slave_reg
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/pit_slave_reg/CK (DFFR_X1)          0.00       0.00 r
+  regs/pit_slave_reg/QN (DFFR_X1)          0.07       0.07 r
+  U107/ZN (OAI22_X1)                       0.03       0.10 f
+  regs/pit_slave_reg/D (DFFR_X1)           0.01       0.11 f
+  data arrival time                                   0.11
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/pit_slave_reg/CK (DFFR_X1)          0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.10
+
+
+  Startpoint: counter/cnt_n_reg[2]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: counter/cnt_n_reg[2]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter/cnt_n_reg[2]/CK (DFFS_X1)        0.00       0.00 r
+  counter/cnt_n_reg[2]/QN (DFFS_X1)        0.07       0.07 f
+  U363/ZN (AOI22_X1)                       0.03       0.10 r
+  counter/cnt_n_reg[2]/D (DFFS_X1)         0.01       0.11 r
+  data arrival time                                   0.11
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter/cnt_n_reg[2]/CK (DFFS_X1)        0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.10
+
+
+  Startpoint: counter/cnt_n_reg[15]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: counter/cnt_n_reg[15]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter/cnt_n_reg[15]/CK (DFFS_X1)       0.00       0.00 r
+  counter/cnt_n_reg[15]/QN (DFFS_X1)       0.07       0.07 f
+  U356/ZN (AOI22_X1)                       0.04       0.11 r
+  counter/cnt_n_reg[15]/D (DFFS_X1)        0.01       0.11 r
+  data arrival time                                   0.11
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter/cnt_n_reg[15]/CK (DFFS_X1)       0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.11
+
+
+  Startpoint: counter/cnt_flag_o_reg
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: counter/cnt_flag_o_reg
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter/cnt_flag_o_reg/CK (DFFR_X1)      0.00       0.00 r
+  counter/cnt_flag_o_reg/QN (DFFR_X1)      0.07       0.07 r
+  U394/ZN (AOI211_X1)                      0.03       0.10 f
+  counter/cnt_flag_o_reg/D (DFFR_X1)       0.01       0.11 f
+  data arrival time                                   0.11
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  counter/cnt_flag_o_reg/CK (DFFR_X1)      0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.11
+  -----------------------------------------------------------
+  slack (MET)                                         0.11
+
+
+  Startpoint: regs/mod_value_reg[2]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: regs/mod_value_reg[2]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/mod_value_reg[2]/CK (DFFR_X1)       0.00       0.00 r
+  regs/mod_value_reg[2]/QN (DFFR_X1)       0.08       0.08 r
+  U102/ZN (OAI22_X1)                       0.03       0.11 f
+  regs/mod_value_reg[2]/D (DFFR_X1)        0.01       0.12 f
+  data arrival time                                   0.12
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/mod_value_reg[2]/CK (DFFR_X1)       0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.11
+
+
+  Startpoint: regs/mod_value_reg[1]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: regs/mod_value_reg[1]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/mod_value_reg[1]/CK (DFFR_X1)       0.00       0.00 r
+  regs/mod_value_reg[1]/QN (DFFR_X1)       0.08       0.08 r
+  U103/ZN (OAI22_X1)                       0.03       0.11 f
+  regs/mod_value_reg[1]/D (DFFR_X1)        0.01       0.12 f
+  data arrival time                                   0.12
+
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  regs/mod_value_reg[1]/CK (DFFR_X1)       0.00       0.00 r
+  library hold time                        0.01       0.01
+  data required time                                  0.01
+  -----------------------------------------------------------
+  data required time                                  0.01
+  data arrival time                                  -0.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.11
+
+
+1

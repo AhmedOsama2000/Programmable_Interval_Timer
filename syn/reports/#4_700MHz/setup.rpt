@@ -1,0 +1,432 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 10
+Design : pit_top
+Version: G-2012.06-SP2
+Date   : Sun Sep 30 06:28:26 2018
+****************************************
+
+Operating Conditions: worst_low   Library: NangateOpenCellLibrary_ss0p95vn40c
+Wire Load Model Mode: top
+
+  Startpoint: ext_sync_i (input port clocked by wb_clk_i)
+  Endpoint: prescale/cnt_n_reg[14]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.36       0.36 r
+  ext_sync_i (in)                          0.00       0.36 r
+  U261/ZN (AOI22_X1)                       0.05       0.41 f
+  U228/ZN (NOR2_X2)                        0.08       0.49 r
+  U211/ZN (NAND2_X1)                       0.04       0.53 f
+  U225/ZN (INV_X1)                         0.03       0.56 r
+  DP_OP_56J18_124_736/U14/CO (HA_X1)       0.05       0.62 r
+  DP_OP_56J18_124_736/U13/CO (HA_X1)       0.05       0.67 r
+  DP_OP_56J18_124_736/U12/CO (HA_X1)       0.05       0.73 r
+  DP_OP_56J18_124_736/U11/CO (HA_X1)       0.05       0.78 r
+  DP_OP_56J18_124_736/U10/CO (HA_X1)       0.05       0.84 r
+  DP_OP_56J18_124_736/U9/CO (HA_X1)        0.05       0.89 r
+  DP_OP_56J18_124_736/U8/CO (HA_X1)        0.05       0.95 r
+  DP_OP_56J18_124_736/U7/CO (HA_X1)        0.05       1.00 r
+  DP_OP_56J18_124_736/U6/CO (HA_X1)        0.05       1.06 r
+  DP_OP_56J18_124_736/U5/CO (HA_X1)        0.06       1.11 r
+  U188/ZN (NAND2_X1)                       0.04       1.15 f
+  U191/ZN (NOR2_X1)                        0.04       1.19 r
+  DP_OP_56J18_124_736/U2/CO (HA_X1)        0.06       1.25 r
+  U224/ZN (XNOR2_X1)                       0.05       1.30 r
+  prescale/cnt_n_reg[14]/D (DFFR_X1)       0.01       1.31 r
+  data arrival time                                   1.31
+
+  clock wb_clk_i (rise edge)               1.43       1.43
+  clock network delay (ideal)              0.00       1.43
+  clock uncertainty                       -0.05       1.38
+  prescale/cnt_n_reg[14]/CK (DFFR_X1)      0.00       1.38 r
+  library setup time                      -0.04       1.34
+  data required time                                  1.34
+  -----------------------------------------------------------
+  data required time                                  1.34
+  data arrival time                                  -1.31
+  -----------------------------------------------------------
+  slack (MET)                                         0.03
+
+
+  Startpoint: wb_stb_i (input port clocked by wb_clk_i)
+  Endpoint: wb_ack_o (output port clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.36       0.36 r
+  wb_stb_i (in)                            0.00       0.36 r
+  U250/ZN (NAND2_X1)                       0.06       0.42 f
+  U317/ZN (NOR2_X1)                        0.04       0.46 r
+  U243/Z (BUF_X1)                          0.13       0.59 r
+  wb_ack_o (out)                           0.39       0.98 r
+  data arrival time                                   0.98
+
+  clock wb_clk_i (rise edge)               1.43       1.43
+  clock network delay (ideal)              0.00       1.43
+  clock uncertainty                       -0.05       1.38
+  output external delay                   -0.36       1.02
+  data required time                                  1.02
+  -----------------------------------------------------------
+  data required time                                  1.02
+  data arrival time                                  -0.98
+  -----------------------------------------------------------
+  slack (MET)                                         0.04
+
+
+  Startpoint: ext_sync_i (input port clocked by wb_clk_i)
+  Endpoint: prescale/cnt_n_reg[13]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.36       0.36 r
+  ext_sync_i (in)                          0.00       0.36 r
+  U261/ZN (AOI22_X1)                       0.05       0.41 f
+  U228/ZN (NOR2_X2)                        0.08       0.49 r
+  U211/ZN (NAND2_X1)                       0.04       0.53 f
+  U225/ZN (INV_X1)                         0.03       0.56 r
+  DP_OP_56J18_124_736/U14/CO (HA_X1)       0.05       0.62 r
+  DP_OP_56J18_124_736/U13/CO (HA_X1)       0.05       0.67 r
+  DP_OP_56J18_124_736/U12/CO (HA_X1)       0.05       0.73 r
+  DP_OP_56J18_124_736/U11/CO (HA_X1)       0.05       0.78 r
+  DP_OP_56J18_124_736/U10/CO (HA_X1)       0.05       0.84 r
+  DP_OP_56J18_124_736/U9/CO (HA_X1)        0.05       0.89 r
+  DP_OP_56J18_124_736/U8/CO (HA_X1)        0.05       0.95 r
+  DP_OP_56J18_124_736/U7/CO (HA_X1)        0.05       1.00 r
+  DP_OP_56J18_124_736/U6/CO (HA_X1)        0.05       1.06 r
+  DP_OP_56J18_124_736/U5/CO (HA_X1)        0.06       1.11 r
+  U188/ZN (NAND2_X1)                       0.04       1.15 f
+  U191/ZN (NOR2_X1)                        0.04       1.19 r
+  DP_OP_56J18_124_736/U2/S (HA_X1)         0.06       1.25 r
+  prescale/cnt_n_reg[13]/D (DFFR_X1)       0.01       1.26 r
+  data arrival time                                   1.26
+
+  clock wb_clk_i (rise edge)               1.43       1.43
+  clock network delay (ideal)              0.00       1.43
+  clock uncertainty                       -0.05       1.38
+  prescale/cnt_n_reg[13]/CK (DFFR_X1)      0.00       1.38 r
+  library setup time                      -0.04       1.34
+  data required time                                  1.34
+  -----------------------------------------------------------
+  data required time                                  1.34
+  data arrival time                                  -1.26
+  -----------------------------------------------------------
+  slack (MET)                                         0.08
+
+
+  Startpoint: ext_sync_i (input port clocked by wb_clk_i)
+  Endpoint: prescale/cnt_n_reg[12]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.36       0.36 r
+  ext_sync_i (in)                          0.00       0.36 r
+  U261/ZN (AOI22_X1)                       0.05       0.41 f
+  U228/ZN (NOR2_X2)                        0.08       0.49 r
+  U211/ZN (NAND2_X1)                       0.04       0.53 f
+  U225/ZN (INV_X1)                         0.03       0.56 r
+  DP_OP_56J18_124_736/U14/CO (HA_X1)       0.05       0.62 r
+  DP_OP_56J18_124_736/U13/CO (HA_X1)       0.05       0.67 r
+  DP_OP_56J18_124_736/U12/CO (HA_X1)       0.05       0.73 r
+  DP_OP_56J18_124_736/U11/CO (HA_X1)       0.05       0.78 r
+  DP_OP_56J18_124_736/U10/CO (HA_X1)       0.05       0.84 r
+  DP_OP_56J18_124_736/U9/CO (HA_X1)        0.05       0.89 r
+  DP_OP_56J18_124_736/U8/CO (HA_X1)        0.05       0.95 r
+  DP_OP_56J18_124_736/U7/CO (HA_X1)        0.05       1.00 r
+  DP_OP_56J18_124_736/U6/CO (HA_X1)        0.05       1.06 r
+  DP_OP_56J18_124_736/U5/CO (HA_X1)        0.06       1.11 r
+  U188/ZN (NAND2_X1)                       0.04       1.15 f
+  U190/Z (XOR2_X1)                         0.06       1.21 f
+  prescale/cnt_n_reg[12]/D (DFFR_X1)       0.01       1.22 f
+  data arrival time                                   1.22
+
+  clock wb_clk_i (rise edge)               1.43       1.43
+  clock network delay (ideal)              0.00       1.43
+  clock uncertainty                       -0.05       1.38
+  prescale/cnt_n_reg[12]/CK (DFFR_X1)      0.00       1.38 r
+  library setup time                      -0.03       1.35
+  data required time                                  1.35
+  -----------------------------------------------------------
+  data required time                                  1.35
+  data arrival time                                  -1.22
+  -----------------------------------------------------------
+  slack (MET)                                         0.13
+
+
+  Startpoint: ext_sync_i (input port clocked by wb_clk_i)
+  Endpoint: prescale/cnt_n_reg[11]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.36       0.36 r
+  ext_sync_i (in)                          0.00       0.36 r
+  U261/ZN (AOI22_X1)                       0.05       0.41 f
+  U228/ZN (NOR2_X2)                        0.08       0.49 r
+  U211/ZN (NAND2_X1)                       0.04       0.53 f
+  U225/ZN (INV_X1)                         0.03       0.56 r
+  DP_OP_56J18_124_736/U14/CO (HA_X1)       0.05       0.62 r
+  DP_OP_56J18_124_736/U13/CO (HA_X1)       0.05       0.67 r
+  DP_OP_56J18_124_736/U12/CO (HA_X1)       0.05       0.73 r
+  DP_OP_56J18_124_736/U11/CO (HA_X1)       0.05       0.78 r
+  DP_OP_56J18_124_736/U10/CO (HA_X1)       0.05       0.84 r
+  DP_OP_56J18_124_736/U9/CO (HA_X1)        0.05       0.89 r
+  DP_OP_56J18_124_736/U8/CO (HA_X1)        0.05       0.95 r
+  DP_OP_56J18_124_736/U7/CO (HA_X1)        0.05       1.00 r
+  DP_OP_56J18_124_736/U6/CO (HA_X1)        0.05       1.06 r
+  DP_OP_56J18_124_736/U5/CO (HA_X1)        0.06       1.11 r
+  U226/Z (XOR2_X1)                         0.06       1.17 r
+  prescale/cnt_n_reg[11]/D (DFFR_X1)       0.01       1.18 r
+  data arrival time                                   1.18
+
+  clock wb_clk_i (rise edge)               1.43       1.43
+  clock network delay (ideal)              0.00       1.43
+  clock uncertainty                       -0.05       1.38
+  prescale/cnt_n_reg[11]/CK (DFFR_X1)      0.00       1.38 r
+  library setup time                      -0.04       1.34
+  data required time                                  1.34
+  -----------------------------------------------------------
+  data required time                                  1.34
+  data arrival time                                  -1.18
+  -----------------------------------------------------------
+  slack (MET)                                         0.16
+
+
+  Startpoint: ext_sync_i (input port clocked by wb_clk_i)
+  Endpoint: prescale/cnt_n_reg[10]
+            (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock wb_clk_i (rise edge)               0.00       0.00
+  clock network delay (ideal)              0.00       0.00
+  input external delay                     0.36       0.36 r
+  ext_sync_i (in)                          0.00       0.36 r
+  U261/ZN (AOI22_X1)                       0.05       0.41 f
+  U228/ZN (NOR2_X2)                        0.08       0.49 r
+  U211/ZN (NAND2_X1)                       0.04       0.53 f
+  U225/ZN (INV_X1)                         0.03       0.56 r
+  DP_OP_56J18_124_736/U14/CO (HA_X1)       0.05       0.62 r
+  DP_OP_56J18_124_736/U13/CO (HA_X1)       0.05       0.67 r
+  DP_OP_56J18_124_736/U12/CO (HA_X1)       0.05       0.73 r
+  DP_OP_56J18_124_736/U11/CO (HA_X1)       0.05       0.78 r
+  DP_OP_56J18_124_736/U10/CO (HA_X1)       0.05       0.84 r
+  DP_OP_56J18_124_736/U9/CO (HA_X1)        0.05       0.89 r
+  DP_OP_56J18_124_736/U8/CO (HA_X1)        0.05       0.95 r
+  DP_OP_56J18_124_736/U7/CO (HA_X1)        0.05       1.00 r
+  DP_OP_56J18_124_736/U6/CO (HA_X1)        0.05       1.06 r
+  DP_OP_56J18_124_736/U5/S (HA_X1)         0.06       1.12 r
+  prescale/cnt_n_reg[10]/D (DFFR_X1)       0.01       1.13 r
+  data arrival time                                   1.13
+
+  clock wb_clk_i (rise edge)               1.43       1.43
+  clock network delay (ideal)              0.00       1.43
+  clock uncertainty                       -0.05       1.38
+  prescale/cnt_n_reg[10]/CK (DFFR_X1)      0.00       1.38 r
+  library setup time                      -0.04       1.34
+  data required time                                  1.34
+  -----------------------------------------------------------
+  data required time                                  1.34
+  data arrival time                                  -1.13
+  -----------------------------------------------------------
+  slack (MET)                                         0.22
+
+
+  Startpoint: wishbone/addr_latch_reg[1]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: wb_dat_o[8]
+            (output port clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/addr_latch_reg[1]/CK (DFF_X1)                  0.00       0.00 r
+  wishbone/addr_latch_reg[1]/Q (DFF_X1)                   0.08       0.08 f
+  U251/ZN (NOR3_X1)                                       0.09       0.17 r
+  U242/ZN (INV_X1)                                        0.08       0.26 f
+  U229/ZN (OAI222_X1)                                     0.08       0.33 r
+  U202/Z (BUF_X1)                                         0.14       0.47 r
+  wb_dat_o[8] (out)                                       0.31       0.78 r
+  data arrival time                                                  0.78
+
+  clock wb_clk_i (rise edge)                              1.43       1.43
+  clock network delay (ideal)                             0.00       1.43
+  clock uncertainty                                      -0.05       1.38
+  output external delay                                  -0.36       1.02
+  data required time                                                 1.02
+  --------------------------------------------------------------------------
+  data required time                                                 1.02
+  data arrival time                                                 -0.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.24
+
+
+  Startpoint: wishbone/addr_latch_reg[1]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: wb_dat_o[9]
+            (output port clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/addr_latch_reg[1]/CK (DFF_X1)                  0.00       0.00 r
+  wishbone/addr_latch_reg[1]/Q (DFF_X1)                   0.08       0.08 f
+  U251/ZN (NOR3_X1)                                       0.09       0.17 r
+  U242/ZN (INV_X1)                                        0.08       0.26 f
+  U238/ZN (OAI222_X1)                                     0.08       0.33 r
+  U195/Z (BUF_X1)                                         0.14       0.47 r
+  wb_dat_o[9] (out)                                       0.31       0.78 r
+  data arrival time                                                  0.78
+
+  clock wb_clk_i (rise edge)                              1.43       1.43
+  clock network delay (ideal)                             0.00       1.43
+  clock uncertainty                                      -0.05       1.38
+  output external delay                                  -0.36       1.02
+  data required time                                                 1.02
+  --------------------------------------------------------------------------
+  data required time                                                 1.02
+  data arrival time                                                 -0.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.24
+
+
+  Startpoint: wishbone/addr_latch_reg[1]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: wb_dat_o[10]
+            (output port clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/addr_latch_reg[1]/CK (DFF_X1)                  0.00       0.00 r
+  wishbone/addr_latch_reg[1]/Q (DFF_X1)                   0.08       0.08 f
+  U251/ZN (NOR3_X1)                                       0.09       0.17 r
+  U242/ZN (INV_X1)                                        0.08       0.26 f
+  U240/ZN (OAI222_X1)                                     0.08       0.33 r
+  U200/Z (BUF_X1)                                         0.14       0.47 r
+  wb_dat_o[10] (out)                                      0.31       0.78 r
+  data arrival time                                                  0.78
+
+  clock wb_clk_i (rise edge)                              1.43       1.43
+  clock network delay (ideal)                             0.00       1.43
+  clock uncertainty                                      -0.05       1.38
+  output external delay                                  -0.36       1.02
+  data required time                                                 1.02
+  --------------------------------------------------------------------------
+  data required time                                                 1.02
+  data arrival time                                                 -0.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.24
+
+
+  Startpoint: wishbone/addr_latch_reg[1]
+              (rising edge-triggered flip-flop clocked by wb_clk_i)
+  Endpoint: wb_dat_o[11]
+            (output port clocked by wb_clk_i)
+  Path Group: wb_clk_i
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  pit_top            5K_hvratio_1_1        NangateOpenCellLibrary_ss0p95vn40c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock wb_clk_i (rise edge)                              0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  wishbone/addr_latch_reg[1]/CK (DFF_X1)                  0.00       0.00 r
+  wishbone/addr_latch_reg[1]/Q (DFF_X1)                   0.08       0.08 f
+  U251/ZN (NOR3_X1)                                       0.09       0.17 r
+  U242/ZN (INV_X1)                                        0.08       0.26 f
+  U241/ZN (OAI222_X1)                                     0.08       0.33 r
+  U198/Z (BUF_X1)                                         0.14       0.47 r
+  wb_dat_o[11] (out)                                      0.31       0.78 r
+  data arrival time                                                  0.78
+
+  clock wb_clk_i (rise edge)                              1.43       1.43
+  clock network delay (ideal)                             0.00       1.43
+  clock uncertainty                                      -0.05       1.38
+  output external delay                                  -0.36       1.02
+  data required time                                                 1.02
+  --------------------------------------------------------------------------
+  data required time                                                 1.02
+  data arrival time                                                 -0.78
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.24
+
+
+1

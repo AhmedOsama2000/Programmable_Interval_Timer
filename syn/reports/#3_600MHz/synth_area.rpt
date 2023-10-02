@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : pit_top
+Version: G-2012.06-SP2
+Date   : Tue Oct  2 04:34:32 2018
+****************************************
+
+Information: Updating design information... (UID-85)
+Library(s) Used:
+
+    NangateOpenCellLibrary_ss0p95vn40c (File: /home/standard_cell_libraries/NangateOpenCellLibrary_PDKv1_3_v2010_12/lib/Front_End/Liberty/NLDM/NangateOpenCellLibrary_ss0p95vn40c.db)
+
+Number of ports:                           49
+Number of nets:                           387
+Number of cells:                          318
+Number of combinational cells:            256
+Number of sequential cells:                62
+Number of macros:                           0
+Number of buf/inv:                         44
+Number of references:                      32
+
+Combinational area:        287.812001
+Buf/Inv area:               26.866000
+Noncombinational area:     327.446010
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:           615.258011
+Total area:                 undefined
+1
